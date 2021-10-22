@@ -1,24 +1,51 @@
 /*VARIABLES*/
-:root{}
+:root{
+    /*sizes*/
+    --width-moblie: 375px;
+    --height-mobile: 812px;
+
+    /*font-sizes*/
+    --title-fontSize-mobile: 24px;
+    --gitHubLink-fontSize-mobile: 16px;
+    --text-fontSize-mobile: 14px;
+
+    /*font-families*/
+    --font: 'Roboto', sans-serif;
+
+    /*colors*/
+    --gitHubLink-color: #C4C4CC;
+    --texts-color: #E1E1E6;
+}
 /*VARIABLES*/
 
 /*APPLY-FOR-ALL*/
 .pg{}
+.figcaps{}
 /*APPLY-FOR-ALL*/
-
-/*HEADER*/
-.pg-head{}
-.pg-head h1{}
-/*HEADER*/
 
 /*MAIN-CONTENT*/
 .pg-mainContent{}
-/*MAIN-CONTENT*/
 
-/*FOOTER*/
-.pg-foot{}
-.pg-foot a{}
-/*FOOTER*/
+/*AVATAR-SECT*/
+.mainContent__avatar{}
+.avatar__badge{}
+.avatar__foto{}
+/*AVATAR-SECT*/
+
+/*TEXT-SECT*/
+.mainContent__textSect{}
+.textSect__name{}
+.textSect__gitHubLink{}
+.textSect__resume{}
+/*TEXT-SECT*/
+
+/*LINKS-SECT*/
+.mainContent__linksList{}
+.linksList__Container{}
+.link{}
+/*LINKS-SECT*/
+
+/*MAIN-CONTENT*/
 
 /*MEDIA-QUERYs*/
 /*MEDIA-QUERYs*/
