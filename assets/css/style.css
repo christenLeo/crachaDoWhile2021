@@ -1,24 +1,170 @@
 /*VARIABLES*/
-:root{}
+:root{
+    /*sizes*/
+    --width-moblie: 100vw;
+    --height-mobile: 100vh;
+
+    /*font-sizes*/
+    --title-fontSize-mobile: 24px;
+    --gitHubLink-fontSize-mobile: 16px;
+    --text-fontSize-mobile: 14px;
+
+    /*font-families*/
+    --font: 'Roboto', sans-serif;
+
+    /*colors*/
+    --gitHubLink-color: #C4C4CC;
+    --texts-color: #E1E1E6;
+}
 /*VARIABLES*/
 
 /*APPLY-FOR-ALL*/
-.pg{}
+.pg{
+    font-family: var(--font);
+}
+.figcaps{
+    display: none;
+}
 /*APPLY-FOR-ALL*/
 
-/*HEADER*/
-.pg-head{}
-.pg-head h1{}
-/*HEADER*/
+/*MAIN-CONTENT*/
+.tire{
+    display: none;
+}
+.tire-hole{
+    display: none;
+    
+}
+.pg-mainContent{
+    height: 100%;
+    background-image: url(../img/Background.png);
+    background-size: cover;
+    margin: 0 auto;
+    width: var(--width-moblie);
+    height: var(--height-mobile);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 36px;
+
+}
+
+/*AVATAR-SECT*/
+.mainContent__avatar{
+    position: relative;
+}
+.avatar__badge img{
+    margin-top: 184px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 80px;
+    z-index: 1;
+}
+.avatar__foto img{
+    width: 160px;
+    height: 184px;
+    margin-top: 184px;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+/*AVATAR-SECT*/
+
+/*TEXT-SECT*/
+.mainContent__textSect{
+    margin-top: 24px;
+    padding: 0px 57px;
+}
+.textSect__name{
+    font-size: var(--title-fontSize-mobile);
+    color: var(--texts-color);
+    font-weight: 700;
+}
+.textSect__gitHubLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+    font-size: var(--gitHubLink-fontSize-mobile);
+    font-weight: 400;
+}
+.textSect__gitHubLink:visited{
+    color: var(--gitHubLink-color);
+}
+.textSect__gitHubLink:link{
+    text-decoration: none;
+}
+.textSect__resume{
+    margin-top: 32px;
+    font-size: var(--text-fontSize-mobile);
+    color: var(--texts-color);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.75;
+}
+/*TEXT-SECT*/
+
+/*LINKS-SECT*/
+.mainContent__linksList{
+    margin-top: 76px;
+}
+.linksList__Container{
+    display: flex;
+    gap: 8px;
+}
+.links img{
+    width: 48px;
+}
+/*LINKS-SECT*/
 
 /*MAIN-CONTENT*/
-.pg-mainContent{}
-/*MAIN-CONTENT*/
-
-/*FOOTER*/
-.pg-foot{}
-.pg-foot a{}
-/*FOOTER*/
 
 /*MEDIA-QUERYs*/
+@media screen and (min-width: 376px){
+    .pg{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/desktop_backGround.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .tire{
+        display: block;
+        width: 64px;
+        height: 158px;
+        background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+        box-shadow: 0px 0px 10px 1px;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+    }
+    .tire-hole{
+        display: block;
+        background-color: #000;
+        position: absolute;
+        width: 80px;
+        height: 8px;
+        top: 156px;
+    }
+    .pg-mainContent{
+        background-image: url(../img/idCardBackground.png);
+        margin-top: 140px;
+        width: 375px;
+        height: 540px;
+        box-shadow: 0px 0px 20px 1px;
+    }
+    .avatar__foto img{
+        margin-top: 80px;
+    }
+    .avatar__badge img{
+        margin-top: 80px;
+    }
+    .mainContent__linksList{
+        margin-top: 30px;
+        margin-bottom: 32px;
+    }
+}
 /*MEDIA-QUERYs*/
