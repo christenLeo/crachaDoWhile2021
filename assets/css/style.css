@@ -123,7 +123,7 @@
 @media screen and (min-width: 376px){
     .pg{
         width: 100vw;
-        height: 200vh;
+        height: 150vh;
         background-image: url(../img/desktop_backGround.png);
         background-size: cover;
         background-repeat: no-repeat;
